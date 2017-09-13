@@ -19,6 +19,8 @@ Client$navigate(paste0("https://www.twitter.com/",gsub("@",replacement = "",x = 
 
 Client$sendKeysToActiveElement(list(key="escape"))
 
+# 40 is taken because most of the handles in this data frame requires less than 40 "end" keystrokes to reach the first tweet  
+
 for(j in 1:40)
 {  
 # required for getting tweets from the page which are not loaded
